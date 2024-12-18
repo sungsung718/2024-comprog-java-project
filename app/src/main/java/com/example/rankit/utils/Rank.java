@@ -1,5 +1,6 @@
 package com.example.rankit.utils;
 
+import com.google.gson.Gson;
 import java.util.List;
 
 public class Rank {
@@ -32,5 +33,10 @@ public class Rank {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String toJson() {
+        Gson gson = new Gson();
+        return gson.toJson(this);
     }
 }
