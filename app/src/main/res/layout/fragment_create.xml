@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.create.CreateFragment">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+      android:id="@+id/topicEditText"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:hint="주제"
+      android:inputType="text"
+      android:padding="10dp"
+      style="@style/VERY_BIG_NAVY"
+      android:layout_marginTop="10dp"
+      android:layout_marginStart="30dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+      android:id="@+id/totalScoreTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="총점"
+      style="@style/BIG_BLACK"
+      android:layout_marginTop="10dp"
+      android:layout_marginStart="50dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/topicEditText"/>
+
+    <EditText
+      android:id="@+id/totalScoreEditText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:hint="총점"
+      android:inputType="number"
+
+      style="@style/NORMAL_BLACK"
+      android:layout_marginTop="5dp"
+      android:layout_marginStart="50dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/totalScoreTextView"/>
+
+    <Button
+      android:id="@+id/createRankButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/btn_big"
+      android:text="저장하기"
+      android:textColor="@color/white"
+      android:layout_marginBottom="30dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
